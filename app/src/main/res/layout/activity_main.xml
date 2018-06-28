@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.whostudied.MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:focusedByDefault="false"
+            android:hint="What's your name?"
+            android:inputType="textCapWords" />
+
+        <RadioGroup
+            android:id="@+id/sex_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+
+            <RadioButton
+                android:id="@+id/maleRBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="radio_click"
+                android:text="Boys" />
+
+            <TextView
+                android:id="@+id/boys_house"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Boys House Dominate!!! "
+                android:textSize="0sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/femaleRBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="radio_click"
+                android:text="Girls" />
+
+            <TextView
+                android:id="@+id/girls_house"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Girls House Rulez!!! "
+                android:textSize="0sp"
+                android:textStyle="italic" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/Topics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Choose your Topic(s)" />
+
+        <CheckBox
+            android:id="@+id/nigeria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="0dp"
+            android:buttonTint="#1A99C4"
+            android:onClick="onCheckboxNigeria"
+            android:text="Nigeria" />
+
+        <CheckBox
+            android:id="@+id/founders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:buttonTint="#1A99C4"
+            android:onClick="onCheckboxFounders"
+            android:text="Founders" />
+
+        <CheckBox
+            android:id="@+id/startups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:buttonTint="#1A99C4"
+            android:onClick="onCheckboxStartups"
+            android:text="Startups" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.android.courtcounter.MainActivity">
+
+            <Button
+                android:id="@+id/start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@color/colorPrimary"
+                android:onClick="startTest"
+                android:text="Begin"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

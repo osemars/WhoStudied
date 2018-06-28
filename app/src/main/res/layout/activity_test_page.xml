@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/thistle"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        tools:context="com.example.android.whostudied.TestPage">
+
+        <TextView
+            android:id="@+id/name_output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text=" "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Question_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:text="* What is the name of Nigeria's president?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/cb_musa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="0dp"
+            android:buttonTint="#1A99C4"
+            android:onClick="musaClick"
+            android:text="Musa"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/cb_mohammed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:buttonTint="#1A99C4"
+            android:onClick="onCheckboxmohammed"
+            android:text="Mohammed"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/cb_buhari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:buttonTint="#1A99C4"
+            android:onClick="onCheckboxBuhari"
+            android:text="Buhari"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/cb_aliko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:buttonTint="#1A99C4"
+            android:onClick="alikoClick"
+            android:text="Aliko"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/Question_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:text="* What is the capital of Nigeria?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/FreeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:focusedByDefault="false"
+            android:inputType="textCapWords"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/Question_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:text="* Who is the most popular founder of these?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/options3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/option_3a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="Elon Musk" />
+
+            <RadioButton
+                android:id="@+id/option_3b"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="Mark Zukerberg" />
+
+            <RadioButton
+                android:id="@+id/option_3c"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="Billy Gates" />
+
+            <RadioButton
+                android:id="@+id/option_3d"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="Daniel Okojie" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/Question_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:text="* Which of these founders founded Amazon?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/option_4a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="Jeff Bezos" />
+
+            <RadioButton
+                android:id="@+id/option_4b"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="Eric Smitch" />
+
+            <RadioButton
+                android:id="@+id/option_4c"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="Sundai Pichai" />
+
+            <RadioButton
+                android:id="@+id/option_4d"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="Elon Musk" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/Question_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:text="* Which of these is a startup?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/options5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/option_5a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="Google" />
+
+            <RadioButton
+                android:id="@+id/option_5b"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="Andela" />
+
+            <RadioButton
+                android:id="@+id/option_5c"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="Dipitize" />
+
+            <RadioButton
+                android:id="@+id/option_5d"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="Udacity" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/Question_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:text="* Where is Silicon Valley located?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/option6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/option_6a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="Califonia" />
+
+            <RadioButton
+                android:id="@+id/option_6b"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="New York" />
+
+            <RadioButton
+                android:id="@+id/option_6c"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="Canada" />
+
+            <RadioButton
+                android:id="@+id/option_6d"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="Miami" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/finishB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="24dp"
+            android:background="@color/colorPrimary"
+            android:onClick="finish"
+            android:text="submit"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>

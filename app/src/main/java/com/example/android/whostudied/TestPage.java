@@ -20,10 +20,13 @@ public class TestPage extends AppCompatActivity {
     Boolean NigeriaBoxChecked;
     Boolean FounderBoxChecked;
     Boolean StartupBoxChecked;
+    //a,b,c represents the number of questions to be displayed.
+    //each represents one subject i.e 2 questions.
     int a = 0;
     int b = 0;
-    int c = 0; //a,b,c are the number of questions to be displayed.
+    int c = 0; 
     int OVERALL_SCORE;
+    //booleans for the multiple answer question i.e Nigeria(1a)
     Boolean moha_checked = false;
     Boolean bubu_checked = false;
     Boolean koko_checked = false;
@@ -33,17 +36,17 @@ public class TestPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_page);
-        //Receiving data from MainActivity to TestPage.java
-        //Receive name and sex of user, and store in value and chant
+        //Receiving user's data from MainActivity
+        //Receive name, team, and chosen subjects and store in 
+        //value, value2, value3, value4 and value5.
         Intent intent = getIntent();
         String value = getIntent().getStringExtra(EXTRA_MESSAGE);
-        //Change the View where "name" should be displayed into a TextView and store in textView
         String value2 = getIntent().getStringExtra(intent.EXTRA_TEXT);
         Boolean value3 = getIntent().getBooleanExtra(intent.EXTRA_RESULT_RECEIVER, false);
         Boolean value4 = getIntent().getBooleanExtra(intent.EXTRA_ALLOW_MULTIPLE, false);
         Boolean value5 = getIntent().getBooleanExtra(intent.EXTRA_PROCESS_TEXT, false);
+        //Change the View where player's name should be displayed into a TextView and store in textView
         TextView textView = findViewById(R.id.name_output);
-        //add name to show in textView
         textView.setText(value + ", let's see how much you really know!");
         textView.setTextColor(Color.RED);
         // assign value2 to chant

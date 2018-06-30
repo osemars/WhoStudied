@@ -15,7 +15,7 @@ import android.widget.Toast;
 import static com.example.android.whostudied.MainActivity.EXTRA_MESSAGE;
 
 public class TestPage extends AppCompatActivity {
-    //chant: check MainActivity, Line49 & 54
+    //chant: check MainActivity, Line48 & 53
     String chant = "";
     Boolean NigeriaBoxChecked;
     Boolean FounderBoxChecked;

@@ -31,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
+    
+    //choosing girls or boys team
     public void radio_click(View view) {
         //maleRBtn is changed from View to RadioButton and stored in MaleRadio
         RadioButton MaleRadio = findViewById(R.id.maleRBtn);

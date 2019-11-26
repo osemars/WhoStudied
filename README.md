@@ -14,4 +14,4 @@ It then uses these data to personalize your experience in the Test Activity; whi
 This is a link to the .apk file for Whostudied. Please scroll down as its located right at the bottom of the folder. https://drive.google.com/open?id=1-YksbZdzrb8vvIwsiwvR9KU1wda1HqQC
 
 # Finally 
-I'm proud of myself as i have changed as a better person, since i started reading codes. Thank you ALC.
+I'm proud of myself as i have changed as a better person, since i started reading codes. Thank you Google, Udacity and ALC.

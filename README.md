@@ -1,7 +1,7 @@
 # WhoStudied_ALC
 
 # Introduction
-WhoStudied? is a quiz app I created for my Andela/Google Nanodegree scholarship.
+WhoStudied? is a quiz app I created for the first phase of my Google/Udacity/Andela Android Basic Nanodegree scholarship (Africa). It's the first Android application I built.
 
 # Idea
 The idea is a Boys vs Girls Quiz like the one we had back in pry/sec school. Here, Player's quiz score gets added (updated) to the total score of their team (Boys team or Girls team) creating a new total score (though i havent fully implemented the part where the total house score gets updated).
